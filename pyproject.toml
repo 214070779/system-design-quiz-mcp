@@ -10,3 +10,6 @@ dependencies = [
 
 [project.scripts]
 system-design-quiz = "server:main"
+
+[tool.setuptools]
+packages = []
