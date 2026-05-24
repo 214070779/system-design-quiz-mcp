@@ -1,0 +1,61 @@
+# MCPize Marketplace Configuration
+# https://mcpize.com/docs/configuration
+
+name: system-design-quiz
+version: 0.1.0
+description: System Design Interview Coach — generates quiz questions (MCQ & open-ended) and evaluates your answers with rubric-based scoring across 7 topics including load balancing, caching, databases, and distributed systems.
+
+transport: stdio
+command: python3
+args:
+  - server.py
+
+categories:
+  - education
+  - developer-tools
+
+tags:
+  - system-design
+  - interview-prep
+  - coding-interviews
+  - quiz
+  - study
+  - education
+  - distributed-systems
+
+pricing:
+  - tier: Free
+    description: 5 questions per day, unlimited topic browsing, basic answer evaluation
+    price: 0
+    features:
+      - 5 questions per day
+      - All 7 system design topics
+      - MCQ & open-ended questions
+      - Basic answer scoring
+    monthly_requests: 150
+
+  - tier: Pro
+    description: Unlimited questions, detailed rubric evaluation, progress tracking, priority support
+    price: 19
+    features:
+      - Unlimited questions
+      - Detailed rubric-based evaluation
+      - Progress tracking
+      - Priority support
+      - Early access to new topics
+    monthly_requests: 5000
+
+links:
+  documentation: https://github.com/214070779/system-design-quiz-mcp#readme
+  repository: https://github.com/214070779/system-design-quiz-mcp
+  issues: https://github.com/214070779/system-design-quiz-mcp/issues
+
+seo:
+  title: System Design Quiz - MCP Server for Interview Practice
+  description: Practice system design interview questions directly from your AI assistant. Generate MCQ and open-ended questions across 7 topics, get rubric-based answer evaluation, and track your progress. Works with Claude Desktop, Cursor, and any MCP-compatible client.
+  keywords:
+    - system design interview
+    - mcp quiz server
+    - interview practice
+    - system design questions
+    - distributed systems study

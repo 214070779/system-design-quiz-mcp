@@ -1,0 +1,12 @@
+[project]
+name = "system-design-quiz-mcp"
+version = "0.1.0"
+description = "MCP Server for System Design Interview Practice - generates quiz questions and evaluates open-ended answers"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.6.0",
+    "pydantic>=2.0.0",
+]
+
+[project.scripts]
+system-design-quiz = "server:main"
